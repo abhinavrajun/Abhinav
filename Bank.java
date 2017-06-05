@@ -3,7 +3,7 @@ package com.ravi.abstractclass;
 public abstract class Bank {
 void deposit()
 {
-	System.out.println("you can dep 10 lakhs");
+	System.out.println("you can  lakhs");
 }
 void withdraw()
 {
