@@ -1,4 +1,13 @@
-class Hello
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+import java.lang.*;
+import java.util.Scanner;
+class Hello1
 {
 int top=-1;
  int a[]=new int[10];
@@ -13,23 +22,24 @@ int top=-1;
      Scanner s=new Scanner(System.in);
      System.out.println("enter the no.: ");
       int no=s.nextInt();
-
+     
    a[top]=no;
  }
  public static void main(String[] args)
-  {
-    Scanner sc=new Scanner(System.in);
+  {int j;
+  Hello1 od=new Hello1();
+    Scanner sc=new Scanner(System.in);  
     do{
-    System.out.println("enter 1 to push");
-      int i=sc.nextint();
-      Switch(i)
-      {
-          case 1: push();
+    System.out.println("enter 1 to push\n enter 0 to exit");  
+      int i=sc.nextInt();
+      switch(i){
+          case 1: 
+              od.push();
                    break;
-          default: break;
-  }
+          default: break;         
+  }    
     System.out.println("press 0 to end");
-  int j=sc.nextInt();    }while(j!=0);
+   j=sc.nextInt();    }while(j!=0);
   }
-
+  
 }
