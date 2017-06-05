@@ -30,7 +30,7 @@ int top=-1;
   Hello1 od=new Hello1();
     Scanner sc=new Scanner(System.in);  
     do{
-    System.out.println("enter 1 to push\n enter 0 to exit");  
+    System.out.println("enter 1 to push\n enter 4 to exit");  
       int i=sc.nextInt();
       switch(i){
           case 1: 
