@@ -16,7 +16,7 @@ int top=-1;
    top++;
    if(top>10)
    {
-     System.out.println("is full");
+     System.out.println("\nis full\n");
      return;
    }
      Scanner s=new Scanner(System.in);
@@ -25,21 +25,46 @@ int top=-1;
      
    a[top]=no;
  }
+ void pop(){
+     if(top==-1){
+         System.out.println("\nthe stack is empty\n");
+     }
+     else{ 
+     top--;
+ }
+ }
+ void display(){
+    int j=0;
+    while(j!=top+1){
+                 System.out.println("\n"+a[j]);
+                 j++;
+
+        
+    }
+}
+     
  public static void main(String[] args)
   {int j;
   Hello1 od=new Hello1();
-    Scanner sc=new Scanner(System.in);  
+    Scanner sc=new Scanner(System.in);
+    int i;
     do{
-    System.out.println("enter 1 to push\n enter 0 to exit");  
-      int i=sc.nextInt();
+    System.out.println("1)Enter '1' to push\n2)Enter '2' to pop\n3)Enter '3' to display\n4)Enter '4' to exit\n");  
+      i=sc.nextInt();
       switch(i){
           case 1: 
               od.push();
                    break;
+          case 2:
+              od.pop();
+              break;
+          case 3:
+              od.display();
+              break;
           default: break;         
   }    
-    System.out.println("press 0 to end");
-   j=sc.nextInt();    }while(j!=0);
+   
+      }while(i!=4);
   }
   
 }
