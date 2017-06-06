@@ -16,7 +16,9 @@ int top=-1;
    top++;
    if(top>10)
    {
-     System.out.println("\nis full\n");
+     
+System.out.println("\nis full\n");
+System.out.println("\nis full\n");
      return;
    }
      Scanner s=new Scanner(System.in);
