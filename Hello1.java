@@ -14,7 +14,7 @@ int top=-1;
  void push()
  {
    top++;
-   if(top>10)
+   if(top>4)
    {
      System.out.println("is full");
      return;
@@ -22,24 +22,26 @@ int top=-1;
      Scanner s=new Scanner(System.in);
      System.out.println("enter the no.: ");
       int no=s.nextInt();
-     
+
    a[top]=no;
  }
+
  public static void main(String[] args)
   {int j;
   Hello1 od=new Hello1();
-    Scanner sc=new Scanner(System.in);  
+    Scanner sc=new Scanner(System.in);
     do{
-    System.out.println("enter 1 to push\n enter 4 to exit");  
+    System.out.println("enter 1 to push\n enter 0 to exit");
       int i=sc.nextInt();
       switch(i){
-          case 1: 
+          case 1:
               od.push();
                    break;
-          default: break;         
-  }    
+
+          default: break;
+  }
     System.out.println("press 0 to end");
    j=sc.nextInt();    }while(j!=0);
   }
-  
+
 }
