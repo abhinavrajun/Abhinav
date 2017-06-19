@@ -1,14 +1,14 @@
-import java.util.*;
-import java.io.*;
-import java.lang.*;
+import java.util.LinkedList;
 /**
- * Creates a new linked list which stores all the queues
+ * This class creates a linked list to store the queue.
+ * It has methods to insert, delete and check the number of tabs.
  * 
  *
  */
 class LinkList
 {
     java.util.LinkedList node=new java.util.LinkedList(); 
+    java.util.LinkedList node1=new java.util.LinkedList(); 
     int first;
     int last;
     char queueid;
@@ -48,30 +48,62 @@ class LinkList
     {
        
         if(first==-1&&last==0){
-            first++;
-            node.add(first, " ");
-            first++;
-             node.add(first, " ");
           
-            last++;
              if(numberOfTab(x)==0)
-             node.add(first, x);
+             {  first++;
+             node.add(first, " ");
+             node1.add(first,"");
+             first++;
+              node.add(first, " ");
+           node1.add(first,"");
+             last++;
+            	 node.add(first, x);
+            	 node1.add(first, x);
+             System.out.println("Inserted1");
+             
+             }
              else{
                  System.out.println("First element should not hava 'tab'");
-                  return;
+                 // return;
              }          
-            System.out.println("the first element is"+first);
-            System.out.println("the last element is"+last);
+           // System.out.println("the first element is"+first);
+            //System.out.println("the last element is"+last);
 
         }
         
         else
         {
-            String ab=node.get(last).toString();
+        	String as=node.get(last).toString(); 
+            String ab=node1.get(last).toString();
             if(numberOfTab(x)<numberOfTab(ab)+2)
             {
-            last++;
-            node.add(last, x);
+          
+            if(numberOfTab(x)==0)
+            {last++;
+            	node.add(last, x);
+             node1.add(last,x);
+            }
+            else{
+            	 String asd=node1.get(1).toString();
+            	 if(numberOfTab(x)==1)
+            	 {
+            		 asd=asd+"."+x.replace("\t","");
+            	 }
+            	 else{
+                 for(int i=numberOfTab(x);i>1;i--)
+                 {
+                     String cd=node1.get(last+2-i).toString();
+                     asd=asd+"."+cd.replace("\t", "");
+
+                     //System.out.print("."+cd.replace("\t",""));
+                 }
+                 asd=asd+"."+x.replace("\t", "");
+                 }
+                 last++;
+            	node.add(last,asd);
+            	node1.add(last,x);
+            }
+            System.out.println("Inserted2");
             
 
             }
@@ -88,9 +120,15 @@ class LinkList
      */
     public int deleteFirst()
     {
+    	if(first==-1){
+    		return -1;
+    	}
         int t =first;
+               
                String bc=node.get(first).toString();
-              if(numberOfTab(bc)==0)
+               System.out.println(bc);
+               first++;
+       /*       if(numberOfTab(bc)==0)
         {
             System.out.println(bc);
             first++;
@@ -107,7 +145,7 @@ class LinkList
            first++;
         }
             
-            
+       */     
         
         if(first>last){
         last=0;
@@ -115,6 +153,7 @@ class LinkList
         }
         
         return t;
+       
     }
     /**
      * To look at the first element of the queue
@@ -126,7 +165,7 @@ class LinkList
     }
     /**
      * To check if the queue is empty
-     * @return returns boolen 
+     * @return returns boolean 
      */
     public boolean isEmpty()
     {
@@ -142,7 +181,7 @@ class LinkList
         while(i<=j)
         {
             System.out.println("The elements are\n");   
-            System.out.println(node.get(i)+"\n");
+            System.out.println(node.get(i));
         i++;
         }
         

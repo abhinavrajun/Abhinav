@@ -10,7 +10,7 @@ import java.util.Scanner;
 class Hello1
 {
 int top=-1;
- int a[]=new int[10];
+ String a[]=new String[10];
  void push()
  {
    top++;
@@ -23,10 +23,16 @@ System.out.println("\nis full\n");
    }
      Scanner s=new Scanner(System.in);
      System.out.println("enter the no.: ");
-      int no=s.nextInt();
-
-   a[top]=no;
- }
+      String no=s.next();
+	if(top==0)
+	a[top]=no;
+	else{
+		if(no.startsWith("\t"))
+			{
+				a[top]=("a[top-1]"+"."+"no"
+			}
+             } 
+}
  void pop(){
      if(top==-1){
          System.out.println("\nthe stack is empty\n");
