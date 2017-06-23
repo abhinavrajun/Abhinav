@@ -147,7 +147,7 @@ class LinkList
             
        */     
         
-        if(first>last){
+        if(isEmpty()){
         last=0;
         first=-1;
         }
@@ -162,6 +162,10 @@ class LinkList
     public int peekFirst()
     {
       return first;
+    }
+    public String peekLast()
+    {
+      return node.get(last).toString();	
     }
     /**
      * To check if the queue is empty

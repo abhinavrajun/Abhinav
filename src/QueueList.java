@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +7,7 @@ class QueueList
 {
     public static void main(String[] args)throws IOException
     {
-        Scanner scan1=new Scanner(System.in);
+       /* Scanner scan1=new Scanner(System.in);
         Scanner scan2=new Scanner(System.in);
         
         Queue[] queuelist=new Queue[10];//creates a list of queue objects
@@ -20,6 +19,7 @@ class QueueList
         String input;
         int queueidqueue[]=new int[10];//creating a array of queue id
         int i,j=0;
+         
         while((boolean)true)
         {
             BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -44,7 +44,7 @@ class QueueList
                     System.out.println("enter the queue id");
                     int check=-1;
                     int queueid = scan1.nextInt();//scans the queue id entered
-                   
+                  
                     for( i=0; i<10; i++) 
                     {
                         if(queueidqueue[i] == queueid)//check if the queue id is present
@@ -58,7 +58,11 @@ class QueueList
                     System.out.println("\nEnter elements: ");
                     
                         input=scan2.nextLine();
-                       
+                        if(input.isEmpty())
+                        {
+                        	System.out.println("This field cannotbe left blank");
+                        	break;
+                        }
                         queuelist[check].insert(input);
                      
                     
@@ -69,6 +73,11 @@ class QueueList
                     System.out.println("\nEnter elements: ");                   
                     
                          input = scan2.nextLine();
+                        if(input.isEmpty())
+                        {
+                        	System.out.println("This field cannotbe left blank");
+                        	break;
+                        }
                          queuelist[j].insert(input);
                      
                     
@@ -168,6 +177,9 @@ class QueueList
                 }
             }
             System.out.println(" ");
-        }
+        }*/
+    	Queue q=new Queue();
+    	q.fn();
     }
+	
 }
