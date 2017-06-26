@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="14" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="204" started-at="2017-06-26T10:27:38Z" finished-at="2017-06-26T10:27:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="204" started-at="2017-06-26T10:27:38Z" finished-at="2017-06-26T10:27:38Z">
+      <class name="mu.queuetest.NewTest">
+        <test-method status="PASS" signature="numberOfTabTest()[pri:0, instance:mu.queuetest.NewTest@5056dfcb]" name="numberOfTabTest" duration-ms="31" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numberOfTabTest -->
+        <test-method status="PASS" signature="test2()[pri:2, instance:mu.queuetest.NewTest@5056dfcb]" name="test2" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test1()[pri:1, instance:mu.queuetest.NewTest@5056dfcb]" name="test1" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test3()[pri:3, instance:mu.queuetest.NewTest@5056dfcb]" name="test3" duration-ms="16" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test7()[pri:7, instance:mu.queuetest.NewTest@5056dfcb]" name="test7" duration-ms="16" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test4()[pri:4, instance:mu.queuetest.NewTest@5056dfcb]" name="test4" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test6()[pri:6, instance:mu.queuetest.NewTest@5056dfcb]" name="test6" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test5()[pri:5, instance:mu.queuetest.NewTest@5056dfcb]" name="test5" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test9()[pri:9, instance:mu.queuetest.NewTest@5056dfcb]" name="test9" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="test8()[pri:8, instance:mu.queuetest.NewTest@5056dfcb]" name="test8" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="FAIL" signature="tes13()[pri:13, instance:mu.queuetest.NewTest@5056dfcb]" name="tes13" duration-ms="16" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at my.queue.Queue.case1(Queue.java:188)
+	at mu.queuetest.NewTest.tes13(NewTest.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tes13 -->
+        <test-method status="PASS" signature="test10()[pri:10, instance:mu.queuetest.NewTest@5056dfcb]" name="test10" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test11()[pri:11, instance:mu.queuetest.NewTest@5056dfcb]" name="test11" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="test12()[pri:12, instance:mu.queuetest.NewTest@5056dfcb]" name="test12" duration-ms="0" started-at="2017-06-26T15:57:38Z" finished-at="2017-06-26T15:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+      </class> <!-- mu.queuetest.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
